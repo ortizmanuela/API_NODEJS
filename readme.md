@@ -328,3 +328,226 @@ rm -rf projetoBackend
 
 tem menu de contexto
 Redigir
+
+* Para clonar o projeto
+
+```
+
+git clone URL_REPOSITORIO
+
+```
+
+* Acessar a parta
+
+```
+
+cd NOME_REPOSTITORIO
+
+```
+
+* Reinstalar os pacotes da aplicação
+
+```
+
+npm i
+
+```
+
+* Criar arquivo .env na raiz do projeto
+* Com o comenado nano, podemos criar e editar um arquivo pelo terminal
+* **Ctrl + o:** Salvar o arquivo
+* **Enter:** Confirmar
+* **Ctrl + x:** Fechar o arquivo
+
+```
+
+nano .env
+
+```
+
+* Digitar no arquivo .env
+
+```
+
+PORT = 3008
+
+```
+* Adicionar arquivo .env no .gitignore
+
+```
+
+nano .gitignore
+
+```
+
+```
+
+.env
+
+```
+
+* Abrir o VSCode
+
+```
+
+code .
+
+```
+
+* Criar arquivo de exemplo para as variáveis necessárias da aplicação
+
+```
+
+nano .env.example
+
+```
+
+* Adicionar no arquivo .env.example
+
+```
+
+PORT =
+
+```
+
+* Abrir o aquivo app.js e digitar o cógico
+
+* Importar o pacote express (servidor)
+
+```
+
+const express = require('express');
+
+```
+
+* Importar o pacote dotenv, gerenciador de variáveis de ambiente
+
+```
+
+const dotenv = require('dotenv').config();
+
+```
+
+* Intanciar o express na variável app
+
+```
+
+const app - express();
+
+```
+
+* Setar a porta do servidor a partir do arquivo .env
+* O operador condicional '||' significa 'OU', caso não tenha a variável PORT, será utilizado o valor '3333'
+
+```
+
+app.set('port, process,env.PORT || 3333);
+
+```
+
+* Exportar as configurções na variável app
+
+```
+
+modules,exports = app;
+
+```
+
+* Abrir o arquivo server.js e digitar os códigos
+
+* Importar o arquivo app
+
+```
+
+const app = require('./app');
+
+```
+
+* Importar a porta do servidor
+
+```
+
+const port = app.get('port');
+
+```
+
+* Testar API com a função listen
+* 1° parâmetro: passamos a porta do servidor
+* 2° parâmetro: arrow function para retornar um console informando a porta que está rodando o servidor
+
+```
+
+app.listen(port, () => {
+    console.log(`Running on port ${ port}!`);
+})
+
+```
+
+* Depois de configurar os pacotes e teste do servidor, vamos criar o comando para executar
+* Abrir o arquivo package.json e alterar a chave 'scripts'
+* Substituir o comendo 'test' pelo comando 'start' na linha 7
+
+```
+
+"start":"nodemon src/server.js"
+
+```
+
+* Rodar o comando no terminal com gitBash
+
+```
+
+npm run start
+
+```
+
+* Atualizar projeto no gitHub
+* Adicionar todos arquivos ao versionamento
+
+```
+
+git add.
+
+```
+
+* Salvar projeto e escrever comentários sobre o processo realizado
+
+```
+
+git commit -m 'configuração do projeto
+
+```
+
+* Enviar os arquivos atualizaos para o gitHub
+
+```
+
+git push
+
+```
+
+* Atualize a página no gitHub e verifique se os aruivos foram atualizados
+* Com o projeto no servidor remoto podemos remover os arquivos na nossa máquina
+
+```
+
+cd ..
+
+```
+
+* Comando para acessar uma pasta anterior
+* Fechar o VSCode com o projeto aberto 
+
+```
+
+rm -rf projetoBackend
+
+```
+
+* rm (remove): comando utilizado para apagar arquivo
+
+* -r (recursive): apaga pastas e subpastas de forma recursiva
+
+* -f (force): não pergunta confirmações
+
+* projetoBackend: nome da pasta que contem os arquivos da aplicação
