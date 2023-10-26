@@ -693,3 +693,85 @@ rm -rf projetoBackend
 * -f (force): não pergunta confirmações
 
 * projetoBackend: nome da pasta que contem os arquivos da aplicação
+
+* Abrir o gitBash em um local do computador
+
+* Digitar o comando
+
+```
+
+git clone URL_REPOSITORIO
+
+```
+
+* Digitar o comendo 'cd' e o nome do seu repositório
+
+* cd(change diretory): acessar outra pasta
+
+```
+
+cd NOME_REPOSITORIO
+
+```
+
+* Reinstalar os pacotes da aplicação
+
+```
+
+npm i
+
+```
+
+* Este comando erá recriar a parta node_modules no projeto
+
+* Recriar arquivo .env
+
+* Definir as variáveis no arquivo .env
+
+* Instalar o Insomnia
+
+* Agora abra o insomnia no seu computador
+
+* Vamos criar um novo projeto clicando no ícone indicado pela seta, conforme a imagem abaixo
+
+* Agora precisamos dar um nome para esse projeto, a imagem a seguir sugere o nome 'Projeto API'
+
+* Defina o nome do projeto e clique no botão 'Create'
+
+* Com o projeto criado, precisamos criar uma coleção de requisições para esse projeto
+
+* Clique no botão 'New Collection', conforme indicação da imagem abaixo
+
+* Agora precisamos dar um nome para essa coleção, a imagem a seguir sugere o nome 'Testar rotas do passo 3'
+
+* Defina o nome da coleção e clique no botão 'Create
+
+* Agora estamos dentro do projeto 'Projeto API / Testar rotas do Passo 3' 
+
+* Vamos criar a primeira requisição para a API clicando no botão 'New HTTP Request', indicado na tela a seguir
+
+* Será criar uma nova requisição no método GET
+
+* Todas as requisições desta coleção ficaram listadas neste quadro da esquerda cnforme a imagem
+
+* Podemos alterar o nome da requisição clicando no ícole de seta para baixo e selecionando a opção 'Rename'
+
+* É importante renomear as requisições para deixarmos personalizadas e com a descrição de responsabilidade da requisição
+
+* Podemos adicionar outras requisição clicando no ícone conforme imagens abaixo
+
+* Por padrão a requisição é criada no método GET
+
+* Podemos alaterar o método da requisição clicando no ícone de seta para baixo, conforme a imagem abaixo
+
+* Agora só precisamos descrever a url da nossa API com a porta que definimos (http://localhost:3005) e as rotas (/api/listar) que crimos no arquivos rotas.js do passo 3
+
+* Antes de clicar no botão 'Send' para executar a ação da rota, execute o comando 'npm start' no seu projeto para rodar a API e verifique se o retorno estará conforme a imagem a seguir, ou seja, rodando na porta definida para o servidor
+
+* Após validar que a API esta rodando, executa a ação da rota clicandoo no botão 'Send'
+
+* O Insomnia deverá retornar a mensagem descrita no método GET do nosso arquivo de rotas
+
+* TAREFA
+
+* Criar as outras 3 requisições para os métodos POST, PUT e DELETE para exibir os conteídos de cada métod criado no arquivo de rotas da API
